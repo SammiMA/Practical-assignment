@@ -1,0 +1,57 @@
+---
+title: "Practical assignment"
+author: "Sammi MA-s4659396"
+date: "02/09/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## *Sammi MA*
+## **s4659396**
+
+**---------------------------------------------------------**
+
+Assignment 2
+======================
+
+--------------------------------------
+![Lovely Sammi](./pic.JPG)
+
+
+## Part 2
+```{r echo=FALSE, include=FALSE }
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+library(janitor)
+```
+
+### 1. Display the first 10 rows of the dataset using RMarkdown (1 marks)
+
+### 2. Use `fct_reorder` and `parse_number` functions to create a factor variable `family_income`
+
+### 3. Generate the general statistics of the dataset using `summary()` and `skim()` function (2 mark).
+
+### 4. What is the number of people who celebrate?
+
+### 5. What are categories and stats for each main dish served and the method it is prepared?
+
+### 6. Create a data viz showing this in the most evident way. Provide your own legend and use themes.
+
+### 7. How many use cranberry sauce? How many use gravy?
+
+### 8. What is the distribution of those who celebrate across income ranges
+
+### 9. Present this information in the most evident way on the data viz.
+
+### 10. What are the most common pies, sides, and desserts?
+
+### 11. Present this information on a data viz
+
+### 13. How do the servings differ by income?
+
+### 14. Present this information on a data viz

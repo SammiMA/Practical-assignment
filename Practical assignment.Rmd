@@ -133,6 +133,19 @@ dessert <- Meals %>%
 new_combined <- rbind(pie, side, dessert)
 ```
 
+```{r}
+library(tidyverse)
+new_combined %>% 
+  group_by(type) %>% 
+  mutate(mostcommons = fct_reorder(value, n)) %>%
+  ungroup() %>% 
+  ggplot(aes(mostcommons, n, fill = type)) +
+  facet_wrap(type ~.) +
+  theme(legend.position = "none") +
+  coord_flip() +
+  geom_col() +
+  labs(x="Name of the Foods", y="Frequency of Foods served", title="Data Vis", caption = "Image 3")
+```
 
 
 
